@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nethmi Wasana | IT Undergraduate & Aspiring Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ===== NAVBAR ===== -->
+  <header id="navbar">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-logo">Nethmi<span>.</span></a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#journey" class="nav-link">Journey</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+
+    <div class="hero-inner">
+      <!-- Left: Text -->
+      <div class="hero-content reveal">
+        <p class="hero-greeting">👋 Hello, I'm</p>
+        <h1 class="hero-name">Nethmi Wasana</h1>
+        <h2 class="hero-role">IT Undergraduate at SLIIT</h2>
+        <div class="hero-tags">
+          <span class="hero-tags-prefix">I'm a </span><span class="typing-text"></span>
+        </div>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-code"></i> View Projects
+          </a>
+          <a href="assets/Nethmi_Wasana_CV.pdf" class="btn btn-outline" download>
+            <i class="fas fa-download"></i> Download CV
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Nethm1" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/nethmi-wasana-b86931386" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:nethmiwasana1231@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <!-- Right: Profile Photo -->
+      <div class="hero-photo-wrap reveal">
+        <div class="hero-photo-glow"></div>
+        <div class="hero-photo-orbit">
+          <div class="hero-photo-ring">
+            <img src="images/profile.jpg" alt="Nethmi Wasana" class="hero-photo" />
+          </div>
+        </div>
+        <div class="hero-badge">
+          <i class="fas fa-circle-check"></i> Open to Internships
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <a href="#about"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Get to know me</p>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-inner">
+              <img src="images/profile.jpg" alt="Nethmi Wasana" class="profile-photo" />
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">3rd</span>
+              <span class="stat-label">Year</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text reveal">
+          <h3 class="about-tagline">IT Undergraduate at SLIIT</h3>
+          <p>
+            I am a <strong>3rd-year Information Technology undergraduate at SLIIT</strong> with a strong
+            interest in Software Engineering and Quality Assurance. I am passionate about building
+            real-world software solutions and continuously improving my skills in full-stack development,
+            software testing, and system design.
+          </p>
+          <p>
+            My technical background includes <strong>Java, Spring Boot, React, MySQL, and Android development</strong>,
+            along with hands-on experience in QA testing, test case design, and automation using Playwright.
+            I enjoy working on both development and quality assurance aspects of software, focusing on
+            delivering reliable, user-friendly, and scalable applications.
+          </p>
+          <p>
+            I am currently seeking an <strong>internship opportunity</strong> where I can contribute,
+            learn from industry professionals, and grow as a Software Engineer or QA Engineer.
+          </p>
+
+          <!-- Info Table -->
+          <div class="about-info-table">
+            <div class="info-row">
+              <span class="info-key"><i class="fas fa-user"></i> Name</span>
+              <span class="info-val">Nethmi Wasana</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key"><i class="fas fa-graduation-cap"></i> Degree</span>
+              <span class="info-val">BSc (Hons) Information Technology</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key"><i class="fas fa-university"></i> University</span>
+              <span class="info-val">SLIIT</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key"><i class="fas fa-calendar"></i> Year</span>
+              <span class="info-val">3rd Year (2023 – Present)</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key"><i class="fas fa-envelope"></i> Email</span>
+              <span class="info-val"><a href="mailto:nethmiwasana1231@gmail.com">nethmiwasana1231@gmail.com</a></span>
+            </div>
+            <div class="info-row">
+              <span class="info-key"><i class="fas fa-briefcase"></i> Status</span>
+              <span class="info-val"><span class="status-open"><i class="fas fa-circle-check"></i> Open to Internships</span></span>
+            </div>
+          </div>
+
+          <div class="about-interests">
+            <span class="interest-chip"><i class="fas fa-laptop-code"></i> Software Engineering</span>
+            <span class="interest-chip"><i class="fas fa-vial"></i> QA Engineering</span>
+            <span class="interest-chip"><i class="fas fa-layer-group"></i> Full-Stack Development</span>
+          </div>
+
+          <a href="assets/Nethmi_Wasana_CV.pdf" class="btn btn-primary" download>
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section skills">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <p class="section-label">What I work with</p>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">A full-stack toolkit built through academic projects and hands-on development.</p>
+      </div>
+
+      <!-- Top row: 3 cards -->
+      <div class="skills-row reveal">
+
+        <!-- Programming Languages -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-card-icon lang-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div>
+              <h3 class="skill-card-title">Programming Languages</h3>
+              <p class="skill-card-sub">Core languages I code in</p>
+            </div>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-java"><i class="fab fa-java"></i> Java</span>
+            <span class="pill pill-python"><i class="fab fa-python"></i> Python</span>
+            <span class="pill pill-js"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="pill pill-kotlin"><i class="fab fa-android"></i> Kotlin</span>
+            <span class="pill pill-sql"><i class="fas fa-database"></i> SQL</span>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-card-icon front-icon">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <div>
+              <h3 class="skill-card-title">Frontend Development</h3>
+              <p class="skill-card-sub">Building responsive UIs</p>
+            </div>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-html"><i class="fab fa-html5"></i> HTML5</span>
+            <span class="pill pill-css"><i class="fab fa-css3-alt"></i> CSS3</span>
+            <span class="pill pill-js"><i class="fab fa-js"></i> JS ES6+</span>
+            <span class="pill pill-react"><i class="fab fa-react"></i> React.js</span>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-card-icon back-icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <div>
+              <h3 class="skill-card-title">Backend Development</h3>
+              <p class="skill-card-sub">APIs & server-side logic</p>
+            </div>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-spring"><i class="fas fa-leaf"></i> Spring Boot</span>
+            <span class="pill pill-node"><i class="fab fa-node-js"></i> Node.js</span>
+            <span class="pill pill-express"><i class="fas fa-bolt"></i> Express.js</span>
+            <span class="pill pill-api"><i class="fas fa-plug"></i> REST APIs</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom row: 3 cards -->
+      <div class="skills-row reveal">
+
+        <!-- Databases -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-card-icon db-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <div>
+              <h3 class="skill-card-title">Databases</h3>
+              <p class="skill-card-sub">Data storage & querying</p>
+            </div>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-mysql"><i class="fas fa-table"></i> MySQL</span>
+            <span class="pill pill-mongo"><i class="fas fa-leaf"></i> MongoDB</span>
+          </div>
+        </div>
+
+        <!-- QA & Testing -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-card-icon qa-icon">
+              <i class="fas fa-shield-halved"></i>
+            </div>
+            <div>
+              <h3 class="skill-card-title">QA & Testing</h3>
+              <p class="skill-card-sub">Ensuring software quality</p>
+            </div>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-manual"><i class="fas fa-clipboard-check"></i> Manual Testing</span>
+            <span class="pill pill-testcase"><i class="fas fa-file-alt"></i> Test Case Design</span>
+            <span class="pill pill-bug"><i class="fas fa-bug"></i> Bug Reporting</span>
+            <span class="pill pill-playwright"><i class="fas fa-robot"></i> Playwright</span>
+          </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-card-icon tools-icon">
+              <i class="fas fa-screwdriver-wrench"></i>
+            </div>
+            <div>
+              <h3 class="skill-card-title">Tools & Platforms</h3>
+              <p class="skill-card-sub">Dev environment & workflow</p>
+            </div>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-git"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="pill pill-github"><i class="fab fa-github"></i> GitHub</span>
+            <span class="pill pill-postman"><i class="fas fa-paper-plane"></i> Postman</span>
+            <span class="pill pill-vscode"><i class="fas fa-code"></i> VS Code</span>
+            <span class="pill pill-android"><i class="fab fa-android"></i> Android Studio</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">What I've built</p>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="images/projects/campusx.jpg" alt="CampusX - Smart Campus Management System" class="project-img" />
+            <div class="project-overlay">
+              <a href="https://github.com/Nethm1/CampusX-Smart-Campus-System" target="_blank" class="overlay-btn">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-number">01</div>
+            <h3 class="project-title">CampusX</h3>
+            <p class="project-subtitle">Smart Campus Management System</p>
+            <p class="project-description">
+              A full-stack campus platform with Google OAuth 2.0, role-based access control,
+              smart resource booking with conflict detection, incident reporting, and automated email notifications.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Spring Boot</span>
+              <span class="tech-badge">React.js</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">JWT</span>
+            </div>
+            <a href="https://github.com/Nethm1/CampusX-Smart-Campus-System" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> GitHub Repository
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="images/projects/habix.jpg" alt="HabiX - Android Habit Tracking App" class="project-img habix-img" />
+            <div class="project-overlay">
+              <a href="https://github.com/Nethm1/HabiX" target="_blank" class="overlay-btn">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-number">02</div>
+            <h3 class="project-title">HabiX</h3>
+            <p class="project-subtitle">Android Habit Tracking App</p>
+            <p class="project-description">
+              A native Android application designed to help users build and maintain positive habits
+              through daily tracking, streaks, reminders, and progress analytics.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Kotlin</span>
+              <span class="tech-badge">MVVM</span>
+              <span class="tech-badge">Android</span>
+            </div>
+            <a href="https://github.com/Nethm1/HabiX" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> GitHub Repository
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="images/projects/unilink.jpg" alt="UniLink - Lecturer Appointment Booking System" class="project-img" />
+            <div class="project-overlay">
+              <a href="https://github.com/Nethmi1/UniLink-" target="_blank" class="overlay-btn">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-number">03</div>
+            <h3 class="project-title">UniLink</h3>
+            <p class="project-subtitle">Lecturer Appointment Booking System</p>
+            <p class="project-description">
+              A full-stack web application allowing students to book appointments with lecturers,
+              manage availability slots, and receive real-time notifications.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Spring Boot</span>
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">MySQL</span>
+            </div>
+            <a href="https://github.com/Nethm1/UniLink-" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> GitHub Repository
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="images/projects/qa.jpg" alt="QA Automation" class="project-img" />
+            <div class="project-overlay">
+              <a href="https://github.com/Nethm1/IT3040-Assignment1" target="_blank" class="overlay-btn">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-number">04</div>
+            <h3 class="project-title">QA Automation Project</h3>
+            <p class="project-subtitle">End-to-End Test Automation Suite</p>
+            <p class="project-description">
+              A robust automated testing suite using Playwright to validate web application functionality,
+              covering UI interactions, form validations, and API response assertions.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Playwright</span>
+              <span class="tech-badge">Automation</span>
+            </div>
+            <a href="https://github.com/Nethm1/IT3040-Assignment1" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> GitHub Repository
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="images/projects/inventory.jpg" alt="Inventory System" class="project-img" />
+            <div class="project-overlay">
+              <a href="https://github.com/Rashini0926/Project1" target="_blank" class="overlay-btn">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-number">05</div>
+            <h3 class="project-title">Inventory Management System</h3>
+            <p class="project-subtitle">Full-Stack MERN Application</p>
+            <p class="project-description">
+              A full-featured inventory and delivery management system built with the MERN stack,
+              featuring real-time stock tracking, order management, and analytics dashboard.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">Express.js</span>
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Node.js</span>
+            </div>
+            <a href="https://github.com/Rashini0926/Project1" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> GitHub Repository
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="images/projects/trendify.jpg" alt="Trendify Clothing Store" class="project-img" />
+            <div class="project-overlay">
+              <a href="https://github.com/Nethm1/Trendify_clothing_store" target="_blank" class="overlay-btn">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-number">06</div>
+            <h3 class="project-title">Trendify</h3>
+            <p class="project-subtitle">Clothing Store Mobile App</p>
+            <p class="project-description">
+              A modern Android e-commerce application for an online clothing store with product browsing,
+              filtering, shopping cart, user authentication, and payment integration.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Kotlin</span>
+              <span class="tech-badge">MVVM</span>
+              <span class="tech-badge">Jetpack</span>
+              <span class="tech-badge">Room</span>
+              <span class="tech-badge">Retrofit</span>
+            </div>
+            <a href="https://github.com/Nethm1/Trendify_clothing_store" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> GitHub Repository
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section education">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Academic background</p>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="education-timeline">
+        <div class="edu-card reveal">
+          <div class="edu-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="edu-content">
+            <div class="edu-meta">
+              <span class="edu-year">2023 — Present</span>
+              <span class="edu-status">Currently Enrolled</span>
+            </div>
+            <h3 class="edu-degree">BSc (Hons) Information Technology</h3>
+            <p class="edu-school">Sri Lanka Institute of Information Technology (SLIIT)</p>
+            <p class="edu-desc">
+              Pursuing a full-time degree in Information Technology with a focus on software engineering,
+              database systems, mobile development, and quality assurance. Actively involved in hands-on
+              academic and personal software projects.
+            </p>
+            <div class="edu-highlights">
+              <span class="highlight-chip"><i class="fas fa-star"></i> 3rd Year Undergraduate</span>
+              <span class="highlight-chip"><i class="fas fa-laptop-code"></i> Software Engineering Focus</span>
+              <span class="highlight-chip"><i class="fab fa-android"></i> Mobile Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certifications" class="section certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Verified credentials</p>
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">Professional certifications earned through continuous learning.</p>
+      </div>
+
+      <div class="certs-grid">
+
+        <!-- Cert 1 — MongoDB -->
+        <div class="cert-card reveal">
+          <div class="cert-img-wrap">
+            <img src="images/certs/mongodb.jpg" alt="MongoDB Node.js Developer Path Certificate" class="cert-img" />
+            <div class="cert-badge">
+              <i class="fas fa-circle-check"></i> Verified
+            </div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-issuer">
+              <i class="fas fa-leaf" style="color:#00ed64;"></i>
+              <span>MongoDB, Inc.</span>
+            </div>
+            <h3 class="cert-title">MongoDB Node.js Developer Path</h3>
+            <div class="cert-meta">
+              <span class="cert-date"><i class="fas fa-calendar"></i> April 2026</span>
+              <span class="cert-id"><i class="fas fa-fingerprint"></i> MDBt1xi06ue91</span>
+            </div>
+            <p class="cert-desc">
+              Completed the official MongoDB Node.js Developer Path covering CRUD operations,
+              aggregation pipelines, indexing, data modeling, and Atlas deployment.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== JOURNEY IN MAKING ===== -->
+  <section id="journey" class="section journey">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">My work in progress</p>
+        <h2 class="section-title">A Journey in Making</h2>
+        <p class="section-subtitle">Click on any project card to explore it in detail.</p>
+      </div>
+    </div>
+
+    <!-- CSS marquee strip — duplicated for seamless loop -->
+    <div class="jm-marquee-wrap reveal">
+      <div class="jm-marquee-track" id="jm-marquee-track">
+
+        <!-- SET 1 -->
+        <div class="jm-card" data-project="campusx">
+          <div class="jm-card-img">
+            <img src="images/campusx/ss1.jpg" alt="CampusX" />
+          </div>
+          <div class="jm-card-label">
+            <span class="jm-card-title">CampusX</span>
+            <span class="jm-card-type">Web App</span>
+          </div>
+        </div>
+
+        <div class="jm-card" data-project="habix">
+          <div class="jm-card-img habix-card-img">
+            <img src="images/projects/habix.jpg" alt="HabiX" />
+          </div>
+          <div class="jm-card-label">
+            <span class="jm-card-title">HabiX</span>
+            <span class="jm-card-type">Android App</span>
+          </div>
+        </div>
+
+        <div class="jm-card" data-project="unilink">
+          <div class="jm-card-img">
+            <img src="images/projects/unilink.jpg" alt="UniLink" />
+          </div>
+          <div class="jm-card-label">
+            <span class="jm-card-title">UniLink</span>
+            <span class="jm-card-type">Web App</span>
+          </div>
+        </div>
+
+        <div class="jm-card" data-project="qa">
+          <div class="jm-card-img">
+            <img src="images/projects/qa.jpg" alt="QA Automation" />
+          </div>
+          <div class="jm-card-label">
+            <span class="jm-card-title">QA Automation</span>
+            <span class="jm-card-type">Testing</span>
+          </div>
+        </div>
+
+        <div class="jm-card" data-project="inventory">
+          <div class="jm-card-img">
+            <img src="images/projects/inventory.jpg" alt="Inventory System" />
+          </div>
+          <div class="jm-card-label">
+            <span class="jm-card-title">Inventory System</span>
+            <span class="jm-card-type">MERN Stack</span>
+          </div>
+        </div>
+
+        <div class="jm-card" data-project="trendify">
+          <div class="jm-card-img">
+            <img src="images/projects/trendify.jpg" alt="Trendify" />
+          </div>
+          <div class="jm-card-label">
+            <span class="jm-card-title">Trendify</span>
+            <span class="jm-card-type">Android E-Commerce</span>
+          </div>
+        </div>
+
+        <!-- SET 2 — duplicate for seamless infinite loop -->
+        <div class="jm-card" data-project="campusx">
+          <div class="jm-card-img">
+            <img src="images/projects/campusx.jpg" alt="CampusX" />
+          </div>
+          <div class="jm-card-label">
+            <span class="jm-card-title">CampusX</span>
+            <span class="jm-card-type">Web App</span>
+          </div>
+        </div>
+
+        <div class="jm-card" data-project="habix">
+          <div class="jm-card-img habix-card-img">
+            <img src="images/projects/habix.jpg" alt="HabiX" />
+          </div>
+          <div class="jm-card-label">
+            <span class="jm-card-title">HabiX</span>
+            <span class="jm-card-type">Android App</span>
+          </div>
+        </div>
+
+        <div class="jm-card" data-project="unilink">
+          <div class="jm-card-img">
+            <img src="images/projects/unilink.jpg" alt="UniLink" />
+          </div>
+          <div class="jm-card-label">
+            <span class="jm-card-title">UniLink</span>
+            <span class="jm-card-type">Web App</span>
+          </div>
+        </div>
+
+        <div class="jm-card" data-project="qa">
+          <div class="jm-card-img">
+            <img src="images/projects/qa.jpg" alt="QA Automation" />
+          </div>
+          <div class="jm-card-label">
+            <span class="jm-card-title">QA Automation</span>
+            <span class="jm-card-type">Testing</span>
+          </div>
+        </div>
+
+        <div class="jm-card" data-project="inventory">
+          <div class="jm-card-img">
+            <img src="images/projects/inventory.jpg" alt="Inventory System" />
+          </div>
+          <div class="jm-card-label">
+            <span class="jm-card-title">Inventory System</span>
+            <span class="jm-card-type">MERN Stack</span>
+          </div>
+        </div>
+
+        <div class="jm-card" data-project="trendify">
+          <div class="jm-card-img">
+            <img src="images/projects/trendify.jpg" alt="Trendify" />
+          </div>
+          <div class="jm-card-label">
+            <span class="jm-card-title">Trendify</span>
+            <span class="jm-card-type">Android E-Commerce</span>
+          </div>
+        </div>
+
+      </div><!-- /track -->
+    </div><!-- /marquee-wrap -->
+  </section>
+
+  <!-- ===== JOURNEY MODAL ===== -->
+  <div class="jm-modal-backdrop" id="jm-backdrop">
+    <div class="jm-modal" id="jm-modal" role="dialog" aria-modal="true">
+      <button class="jm-modal-close" id="jm-close" aria-label="Close"><i class="fas fa-xmark"></i></button>
+      <div class="jm-modal-grid" id="jm-modal-grid"></div>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Get in touch</p>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle reveal">
+          I'm actively looking for internship opportunities. Whether you have a role in mind or just want to connect — my inbox is always open.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <h3>Let's work together</h3>
+          <p>Feel free to reach out via email or connect with me on LinkedIn and GitHub. I'm always open to discussing new opportunities, interesting projects, or just having a chat about tech.</p>
+
+          <div class="contact-cards">
+            <a href="mailto:nethmiwasana1231@gmail.com" class="contact-card">
+              <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-card-text">
+                <span class="contact-card-label">Email</span>
+                <span class="contact-card-value">nethmiwasana1231@gmail.com</span>
+              </div>
+              <i class="fas fa-arrow-right contact-card-arrow"></i>
+            </a>
+
+            <a href="https://github.com/Nethm1" target="_blank" class="contact-card">
+              <div class="contact-card-icon"><i class="fab fa-github"></i></div>
+              <div class="contact-card-text">
+                <span class="contact-card-label">GitHub</span>
+                <span class="contact-card-value">github.com/Nethm1</span>
+              </div>
+              <i class="fas fa-arrow-right contact-card-arrow"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/nethmi-wasana-b86931386" target="_blank" class="contact-card">
+              <div class="contact-card-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div class="contact-card-text">
+                <span class="contact-card-label">LinkedIn</span>
+                <span class="contact-card-value">nethmi-wasana-b86931386</span>
+              </div>
+              <i class="fas fa-arrow-right contact-card-arrow"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="Your@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="Internship Opportunity" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Hi Nethmi, I'd love to discuss..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#hero" class="footer-logo">Nethmi<span>.</span></a>
+        <p class="footer-copy">© 2026 Nethmi Wasana · Crafted with <i class="fas fa-heart"></i> for opportunities</p>
+        <div class="footer-socials">
+          <a href="https://github.com/Nethm1" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/nethmi-wasana-b86931386" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:nethmiwasana1231@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
