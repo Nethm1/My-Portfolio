@@ -1198,8 +1198,31 @@ img { max-width: 100%; display: block; }
   font-size: 0.84rem;
   color: var(--text-secondary);
   line-height: 1.7;
-  margin-top: auto;
 }
+
+.cert-view-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 9px 20px;
+  background: rgba(124,58,237,0.1);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-bright);
+  transition: var(--transition);
+  align-self: flex-start;
+  text-decoration: none;
+}
+.cert-view-btn:hover {
+  background: rgba(124,58,237,0.25);
+  border-color: var(--border-bright);
+  transform: translateY(-2px);
+  box-shadow: var(--glow-sm);
+}
+.cert-view-btn i { font-size: 0.85rem; }
 
 /* Responsive */
 @media (max-width: 768px) {
